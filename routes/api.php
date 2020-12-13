@@ -27,8 +27,8 @@ Route::middleware('auth:api')->group(function () {
     Route::post('details', [ApiController::class, 'user_info']);
 
     /**Route for Order API */
-    Route::post('order', [OrderController::class, 'store']);
-
+    //Route::post('order', [OrderController::class, 'store']);
+    Route::resource('order', 'App\Http\Controllers\OrderController');
     /**Route for Update Order API */
-    Route::post('order', [OrderController::class, 'store']);
+    // Route::post('order', [OrderController::class, 'store']);
 });
