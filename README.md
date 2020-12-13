@@ -14,7 +14,6 @@ Use the package manager (composer and npm) for installing
 git clone https://github.com/volkandogan/OrderApp.git
 cd OrderApp
 composer install
-npm install
 copy .env.example .env
 ```
 2. Create a database
