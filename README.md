@@ -28,7 +28,7 @@ php artisan key:generate
 php artisan serve
 ```
 <h2 align="center">AVAILABLE ENDPOINTS</h2>
-##POST /api/login
+## POST /api/login
 _Logs a user into the application_
 
 -   Form fields:
@@ -37,7 +37,7 @@ _Logs a user into the application_
 -   Response:
     -   token
 
-##POST /api/order
+## POST /api/order
 store a order into the application
 
 -   Form fields:
@@ -52,7 +52,7 @@ store a order into the application
         - data
         - message
 
-##PUT /api/order/{id}
+## PUT /api/order/{id}
 update an order with order id
 
 form fields:
@@ -63,11 +63,11 @@ status
 data
 message
 
-##GET /api/order
+## GET /api/order
 get all orders
 
 form fields:
-epmty
+empty
 
 
 
