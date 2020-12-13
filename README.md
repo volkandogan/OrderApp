@@ -27,7 +27,7 @@ php artisan key:generate
 ```bash
 php artisan serve
 ```
-##AVAILABLE ENDPOINTS
+<h2 align="center">AVAILABLE ENDPOINTS</h2>
 ##POST /api/login
 Logs a user into the application
 
