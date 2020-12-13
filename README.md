@@ -28,8 +28,9 @@ php artisan key:generate
 php artisan serve
 ```
 <h2 align="center">AVAILABLE ENDPOINTS</h2>
+
 ## POST /api/login
-_Logs a user into the application_
+Logs a user into the application
 
 -   Form fields:
     -   email: string
@@ -55,19 +56,16 @@ store a order into the application
 ## PUT /api/order/{id}
 update an order with order id
 
-form fields:
-quantity: integer
+- form fields:
+        - quantity: integer
 
-response:
-status
-data
-message
+- response:
+    - status
+    -  data
+    -  message
 
 ## GET /api/order
 get all orders
-
-form fields:
-empty
 
 
 
