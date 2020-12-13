@@ -40,17 +40,17 @@ _Logs a user into the application_
 ##POST /api/order
 store a order into the application
 
--form fields:
-       -product_id: integer
-       -user_id: integer
-        -shipping_date:date
-        -quantity:integer,
-        -adress:string
-
--response:
-        -status
-        -data
-        -message
+-   Form fields:
+       - product_id: integer
+       - user_id: integer
+       - shipping_date:date
+       - quantity:integer,
+       - adress:string
+       
+-    Response:
+        - status
+        - data
+        - message
 
 ##PUT /api/order/{id}
 update an order with order id
