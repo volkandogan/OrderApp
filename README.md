@@ -29,13 +29,13 @@ php artisan serve
 ```
 <h2 align="center">AVAILABLE ENDPOINTS</h2>
 ##POST /api/login
--Logs a user into the application
+_Logs a user into the application_
 
--Form fields:
-    -email: string
-    -password: string
--Response:
-    -token
+-   Form fields:
+    -   email: string
+    -   password: string
+-   Response:
+    -   token
 
 ##POST /api/order
 store a order into the application
