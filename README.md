@@ -27,3 +27,47 @@ php artisan key:generate
 ```bash
 php artisan serve
 ```
+##AVAILABLE ENDPOINTS
+##POST /api/login
+Logs a user into the application
+
+Form fields:
+email: string
+password: string
+Response:
+token
+
+##POST /api/order
+store a order into the application
+
+form fields:
+product_id: integer
+user_id: integer
+shipping_date:date
+quantity:integer,
+adress:string
+
+response:
+status
+data
+message
+
+##PUT /api/order/{id}
+update an order with order id
+
+form fields:
+quantity: integer
+
+response:
+status
+data
+message
+
+##GET /api/order
+get all orders
+
+form fields:
+epmty
+
+
+
