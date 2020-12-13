@@ -1,8 +1,3 @@
-## :rocket: ECOMMERCE SYSTEM
-
-## ECOMMERCE SYSTEM?
-- Multi Store
-- API RajaOngkir
 
 ## System Requirement
 - PHP Version 7.4 or Above
