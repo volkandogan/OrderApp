@@ -59,7 +59,10 @@ class OrderController extends Controller
      */
     public function show($id)
     {
-        //
+        $order = Order::all();
+        return response()->json([
+            'data'   => $order,
+        ]);
     }
 
     /**
@@ -82,7 +85,15 @@ class OrderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $order = Order::find($id);
+        $order->quantity =  $request->get('quantity');
+        $order->save();
+
+        return response()->json([
+            'status' => (bool) $order,
+            'data'   => $order,
+            'message' => $order ? 'Order Updated!' : 'Error Updating Order'
+        ]);
     }
 
     /**

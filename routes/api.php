@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ApiController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\OrderController;
 /*
 |--------------------------------------------------------------------------
@@ -16,19 +16,9 @@ use App\Http\Controllers\OrderController;
 */
 
 /**Route for login API */
-Route::post('login', [ApiController::class, 'login']);
-
-/**Route for register API */
-Route::post('register', [ApiController::class, 'register']);
+Route::post('login', [UserController::class, 'login']);
 
 
 Route::middleware('auth:api')->group(function () {
-
-    Route::post('details', [ApiController::class, 'user_info']);
-
-    /**Route for Order API */
-    //Route::post('order', [OrderController::class, 'store']);
     Route::resource('order', 'App\Http\Controllers\OrderController');
-    /**Route for Update Order API */
-    // Route::post('order', [OrderController::class, 'store']);
 });
